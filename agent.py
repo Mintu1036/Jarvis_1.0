@@ -20,7 +20,7 @@ class Assistant(Agent):
 async def entrypoint(ctx: agents.JobContext):
     session = AgentSession(
         llm=google.beta.realtime.RealtimeModel(
-        model="gemini-2.0-flash-exp",
+        model="gemini-2.0-flash-exp", 
         voice="Puck",
         temperature=0.8,
         instructions=AGENT_INSTRUCTION,
